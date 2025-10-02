@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: #615784;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0;
+    align-items: center;
+    /* height: 50vh; */
+    background-color: #312560;
+    margin: 10px;
+    border-radius: 10px;
+    }
+    .contenedor{
+        text-align: center;
+        h2{
+            color: white;
+        }
+    }
+    
+
+    #formulario{
+        margin: 40px 0;
+        border-radius: 10px;
+        background-color: #615784;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        input{
+            width: 250px;
+            height: 35px;
+            border-radius: 10px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            color: #ece0e0;
+            font-weight: 700;
+            background-color: rgb(37, 117, 37);
+        }
+    }
+
+    .aviso{
+        display: block;
+        color: red;
+        text-align: center;
+    }
+   
+    #listaTareas{
+        width: 693px;
+        margin: 50px 0;
+        display: none;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        border-radius: 10px;
+        gap: 10px;
+        background-color: #cac1ea6f;
+        padding: 20px;
+        .lista{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input{
+            width: 450px;
+            height: 35px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 2px solid blue;
+            padding: 0 0 0 5px;
+            align-content: center;
+            }
+            p {
+                padding: 0 0 0 5px;
+                align-content: center;
+                background-color: rgba(123, 6, 225, 0.1);
+                /* border: 1px dotted red; */
+                width: 450px;
+                color: rgb(0, 0, 0,0.9);
+                font-weight: 600;
+                height: 35px;
+                font-size: 18px;
+                border-radius: 10px;
+                b{
+                    /* color: rgba(5, 7, 37, 0.638); */
+                    font-size: 20px;
+                }
+            }
+            button{
+                width: 100px;
+                border-radius: 10px;
+            }
+            .actualizar{
+                background-color: rgb(154, 154, 16);
+                color: #ece0e0;
+                font-weight: 700;
+                height: 35px;
+
+            }
+        .eliminar{
+                background-color: rgb(196, 38, 38);
+                height: 35px;
+                color: #ece0e0;
+                font-weight: 700;
+            }
+        } 
+
+    }
