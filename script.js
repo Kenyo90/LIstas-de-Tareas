@@ -1,29 +1,3 @@
-// let form = document.getElementById("formulario");
-// let aviso = document.getElementsByClassName("aviso")[0];
-// let listas = document.getElementById("listaTareas");
-// let tarea = document.getElementsByClassName("descripcion")[0];
-// let usuario = document.getElementsByClassName("usuario")[0];
-
-// form.addEventListener("submit", function(event) {
-//   event.preventDefault(); // Previene recarga
-
-//   // Mostrar tareas y ocultar aviso
-//   listas.style.display = 'block';
-//   if (aviso) {
-//     aviso.style.display = 'none';
-//   }
-
-//   // Agregar nueva tarea
-//   listas.innerHTML += `
-//     <div class="lista">
-//       <p>La Tarea es: <b>${tarea.value}</b> y lo hará: <b>${usuario.value}</b></p>
-//       <button class="actualizar">Actualizar</button>
-//       <button class="eliminar">Eliminar</button>
-//     </div>`;
-
-//   // Limpiar campos
-//   form.reset();
-// });
 let form = document.getElementById("formulario");
 let aviso = document.getElementsByClassName("aviso")[0];
 let listas = document.getElementById("listaTareas");
@@ -35,8 +9,6 @@ let comentario=document.getElementById('comentario');
 let actualiza=document.getElementsByClassName('actualizar')[0];
 let elimina=document.getElementsByClassName('eliminar')[0];
 let contar=0
-
-
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
@@ -57,8 +29,6 @@ form.addEventListener("submit", function(event) {
     <button class="actualizar" type="button"">Actualizar</button>
     <button class="eliminar" type="button">Eliminar</button>
     </div>`;
-
-
     form.reset(); 
     alert(`Se a creado un nuevo evento ${contar+=1}`)
     console.log("contarrr agregar.",contar)
@@ -107,28 +77,3 @@ listas.addEventListener("click", function (event) {
 
 
 
-
-// function creacion() {
-//   console.log(tarea.value);
-//   console.log(usuario.value);
-//   console.log(li);
-//   listas.style.display='block'
-//   listas.innerHTML += `<div class="lista">
-//     <p id="comentario"> ${tarea.value} ${usuario.value}</p>
-//     <button class="actualizar">Actualizar</button>
-//     <button class="eliminar">Eliminar</button>
-//     </div>`;
-// }
-
-// console.log(uno, dos)
-
-// console.log(li)
-// li.innerHTML=`<p>${tarea.value},${usuario.value} </p>`
-// listas.style.display='block';
-// aviso.style.display='none';
-// crear.addEventListener("click", function() {
-//     console.log("hola");
-//     console.log(listas);
-//     listas.style.display='block';
-//     aviso.style.display='none';
-// });
